@@ -8,7 +8,7 @@ try {
     if (data && data.data && data.data.media) {
         data.data.media = data.data.media.map(item => {
             if (item.watermark_url) {
-                item.watermark_url = ""; // 清空水印链接
+                item.watermark_url = "https://www.xiaohongshu.com/api/sns/v1/note/image"; // 清空水印链接
             }
             return item;
         });
